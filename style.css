@@ -1,0 +1,78 @@
+body {
+  font-family:'Lucida Sans';
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #2d2d2d;
+}
+
+section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home {
+  background: url('sssppp.jpg') no-repeat center center/cover;
+  color: rgb(255, 0, 0);
+  font-size: 24px;
+}
+
+#about, #favgames, #contact {
+  background-color: #f4f4f4;
+  color: #ff0000;
+}
+
+.games-items {
+  display: flex;
+  gap: 24px;
+  color:rgb(255, 0, 0);
+  
+}
+
+.item {
+  padding: 20px;
+  background: #222222;
+  border: 1px solid #000000;
+  transition: transform 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
